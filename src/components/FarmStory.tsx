@@ -25,8 +25,9 @@ export default function FarmStory() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
           {/* Left: Basket Visual from Brand Poster */}
-          <div className="lg:col-span-5 relative flex justify-center order-2 lg:order-1">
+          <div className="lg:col-span-5 relative flex flex-col items-center justify-center order-2 lg:order-1">
             <div className="relative w-full max-w-[340px] sm:max-w-[370px] rounded-3xl overflow-hidden border-4 border-[#8C5029] bg-[#4A2E18] shadow-2xl p-2.5">
+              {/* Full Unobscured Poster Image */}
               <div className="relative aspect-[9/16] w-full rounded-2xl overflow-hidden bg-[#FAF6EE]">
                 <Image
                   src="/images/brand/poster_basket.jpg"
@@ -36,16 +37,16 @@ export default function FarmStory() {
                   className="object-cover object-top hover:scale-102 transition-transform duration-700"
                   priority
                 />
+              </div>
 
-                {/* Subtle Farm Stamp / Badge at Bottom */}
-                <div className="absolute bottom-3.5 left-3.5 right-3.5 bg-[#2D5A27]/92 backdrop-blur-sm rounded-xl py-2 px-3 text-center text-white border border-white/20 shadow-lg">
-                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#FDE68A] block">
-                    🌿 Istranca Ormanları • Balaban Köyü
-                  </span>
-                  <span className="font-serif font-black text-sm text-[#FDFBF7]">
-                    Katkısız & Günlük Taze Lezzet
-                  </span>
-                </div>
+              {/* Green Banner Underneath the Image */}
+              <div className="mt-2.5 bg-[#2D5A27] rounded-2xl py-3 px-4 text-center text-white border border-[#3E7337] shadow-inner">
+                <span className="text-[11px] uppercase font-bold tracking-wider text-[#FDE68A] block">
+                  🌿 Istranca Ormanları • Balaban Köyü
+                </span>
+                <span className="font-serif font-black text-sm text-[#FDFBF7] mt-0.5 block">
+                  Katkısız & Günlük Taze Lezzet
+                </span>
               </div>
             </div>
           </div>
