@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-farm-wood: #4A2E18;
+  --color-farm-wood-dark: #331F0F;
+  --color-farm-wood-light: #6E4524;
+  --color-farm-green: #2D5A27;
+  --color-farm-green-dark: #1E3E1A;
+  --color-farm-green-light: #447C3B;
+  --color-farm-cream: #FDFBF7;
+  --color-farm-cream-card: #FAF6EE;
+  --color-farm-cream-dark: #EFE6D4;
+  --color-farm-gold: #D97706;
+  --color-farm-amber: #F59E0B;
+  --color-farm-yolk: #EAB308;
+  --color-farm-bark: #28190E;
+}
+
+:root {
+  --background: #FDFBF7;
+  --foreground: #28190E;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars with rustic theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EEDF;
+}
+::-webkit-scrollbar-thumb {
+  background: #A88365;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4A2E18;
+}
+
+/* Farm paper texture & pattern helpers */
+.farm-card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(74, 46, 24, 0.08), 0 2px 6px -1px rgba(74, 46, 24, 0.04);
+}
+
+.farm-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.farm-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -4px rgba(74, 46, 24, 0.14), 0 4px 10px -2px rgba(74, 46, 24, 0.06);
+}
+
+/* Subtle wooden ribbon background */
+.wood-badge {
+  background: linear-gradient(135deg, #4A2E18 0%, #341F10 100%);
+  color: #FDFBF7;
+}
+
+.green-badge {
+  background: linear-gradient(135deg, #2D5A27 0%, #1E3F1A 100%);
+  color: #FDFBF7;
+}
